@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Encuesta</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">Encuesta de Retroalimentación</h1>
+      <p id="description">
+        ¡Tu opinión es importante para nosotros! Por favor, completa la
+        siguiente encuesta:
+      </p>
+
+      <form id="survey-form" action="#" method="post">
+        <label id="name-label" for="name">Nombre:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Ingresa tu nombre"
+        />
+
+        <label id="email-label" for="email">Correo electrónico:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Ingresa tu correo electrónico"
+        />
+
+        <label id="number-label" for="number">Número:</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="1"
+          max="100"
+          required
+          placeholder="Ingresa un número"
+        />
+
+        <label for="dropdown">Selecciona una opción:</label>
+        <select id="dropdown" name="dropdown">
+          <option value="opcion1">Opción 1</option>
+          <option value="opcion2">Opción 2</option>
+        </select>
+
+        <fieldset>
+          <legend>Elige una opción:</legend>
+          <label
+            ><input type="radio" name="radio-group" value="opcion1" /> Opción
+            1</label
+          >
+          <label
+            ><input type="radio" name="radio-group" value="opcion2" /> Opción
+            2</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Selecciona una o más opciones:</legend>
+          <label
+            ><input type="checkbox" name="checkbox-group" value="opcion1" />
+            Opción 1</label
+          >
+          <label
+            ><input type="checkbox" name="checkbox-group" value="opcion2" />
+            Opción 2</label
+          >
+        </fieldset>
+
+        <label for="comments">Comentarios adicionales:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Escribe tus comentarios aquí"
+        ></textarea>
+
+        <button type="submit" id="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
